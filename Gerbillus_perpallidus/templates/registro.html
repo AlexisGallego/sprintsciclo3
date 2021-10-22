@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+</head>
+<body>
+    <form action="url_for('form')" method="POST">
+        {{ form.csrf_token() }}
+
+        
+        <div>
+            {{ form.correo_electronico.label }}
+            {{ form.correo_electronico }}
+        </div>
+        <div>
+            {{ form.contraseña.label }}
+            {{ form.contraseña }}
+        </div>
+        <div>
+            {{ form.confirmar_contraseña.label }}
+            {{ form.confirmar_contraseña }}
+        </div>
+        <div>
+            {{ form.usuario.label }}
+            {{ form.usuario }}
+        </div>
+        <div>
+            {{ form.fecha_nacimiento.label }}
+            {{ form.fecha_nacimiento }}
+        </div>
+        <div>
+            {{ form.ciudad.label }}
+            {{ form.ciudad }}
+        </div>
+        <div>
+            {{ form.gustos.label }}
+            {{ form.gustos }}
+        </div>
+        {{ form.registrarse }}
+    </form>
+</body>
+</html>
