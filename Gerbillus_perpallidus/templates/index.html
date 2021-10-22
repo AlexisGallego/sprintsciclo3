@@ -18,7 +18,7 @@
 
             <ul>
                 <li>
-                    <a href="{{ url_for(inicio) }}">Inicio</a>
+                    <a href="{{ url_for('index') }}">Inicio</a>
                 </li>
                 <li>
                     <a href="mensajes"></a>
@@ -27,7 +27,7 @@
                     <a href="notificaciones"></a>
                 </li>
                 <li>
-                    <a href="registro">
+                    <a href="{{ url_for('registrar_usuario') }}">
                         <img src="" alt="icono">
                     </a>
                 </li>

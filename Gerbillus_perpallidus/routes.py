@@ -30,4 +30,4 @@ def registrar_usuario():
     else:
         flash
 
-    return render_template('registro.html',  form = form)   
+    return render_template('registro.html',  form = form)
