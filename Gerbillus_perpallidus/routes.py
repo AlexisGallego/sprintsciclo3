@@ -6,7 +6,7 @@ import sqlite3
 
 def sqlite_connection():
     try:
-        db = sqlite3.connect('db.sqlite')
+        db = sqlite3.connect('Gerbillus_perpallidus\db\db.sqlite')
         return db
     
     except error:
@@ -17,6 +17,15 @@ def create_table(connection):
     cursor.execute("CREATE TABLE usuarios(email text PRYMARY KEY, contraseña text, usuario text, nacimiento date, ciudad text)")
     connection.commit()
 
+def insert_data(datos):
+    insertar = sqlite_connection()
+    cursor = insertar.cursor()
+    sql = "INSERT INTO usuarios (email, contraseña, usuario, ciudad) VALUES (?,?,?,?)"
+    cursor.execute(sql, datos )
+    insertar.commit()
+    insertar.close()
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -25,10 +34,16 @@ def index():
 def registrar_usuario():
     form = forms.registro()
     if form.validate_on_submit():
-        flash('todo salio perfect')
+        datos = [form.correo_electronico,
+                 form.contraseña,
+                 form.usuario,
+                 form.ciudad ]
+
+        insert_data(datos)
+        flash('usuario registrado')
         return redirect(url_for('index'))
     else:
-        flash
+        flash('no se ha podido registrar el usuario')
 
     return render_template('registro.html',  form = form)
 

@@ -5,7 +5,7 @@ from wtforms.fields.html5 import DateField, EmailField
 from wtforms.fields.simple import SubmitField
 import re
 
-regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+
 
 class registro(FlaskForm):
     correo_electronico = EmailField('correo electronico',\
@@ -22,8 +22,7 @@ class registro(FlaskForm):
     usuario = StringField('usuario', 
     validators=[InputRequired()])
 
-    fecha_nacimiento = DateField('fecha nacimiento', format='%y/%m/%d', 
-    validators=[InputRequired()])
+    # fecha_nacimiento = DateField('fecha nacimiento', format='%y/%m/%d')
 
     ciudad = StringField('ciudad', 
     validators=[InputRequired()])
@@ -31,7 +30,11 @@ class registro(FlaskForm):
     gustos = StringField()
     registrarse = SubmitField('registrarse')
 
+
+    # -------------------------------------------------------------
     def email(email):
+        regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+
         if re.fullmatch(regex, email):
             return ('correo electronico valido')
         else:
