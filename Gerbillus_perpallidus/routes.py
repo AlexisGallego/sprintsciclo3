@@ -39,3 +39,30 @@ def mensajes():
 @app.route('/notificaciones')
 def notificaciones():
     return redirect('notificaciones.html')    
+
+#Vistas Sofia
+@app.route('/ingresar')
+def notificaciones():
+    return redirect('ingresar.html')   
+
+@app.route('/perfil')
+def notificaciones():
+    return redirect('perfil.html')   
+
+@app.route('/post')
+def notificaciones():
+    return redirect('post.html') 
+
+#Vistas Lina
+@app.route('/login')
+def notificaciones():
+    return redirect('login.html')
+ 
+@app.route('/recuperarcontra')
+def notificaciones():
+    return redirect('recuperarcontra.html') 
+
+@app.route('/revisarusuario')
+def notificaciones():
+    return redirect('revisarusuario.html') 
+  
