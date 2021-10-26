@@ -1,0 +1,345 @@
+/* Regla CSS con clase */
+#slogan {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 230px;
+    left: 800px;
+}
+.slogan-vista-buscarusuarios{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 100px;
+    left: 850px;
+}
+
+/* Regla CSS con ID */
+#nombreApp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 55px;
+    color: rgb(245, 134, 52);
+    left: 300px;
+}
+
+#nombreApp-vista-buscarusuarios{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 55px;
+    color: rgb(245, 134, 52);
+    left: 700px;
+}
+
+.cuadro1publicaciones-vista-buscarusuarios{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    left: 865px;
+    top: 330px;
+    margin:10px 50px;
+    background-color:rgb(136, 136, 136);
+    color:#000;
+    border-radius: 5px;
+}
+
+.cuadro2publicaciones-vista-buscarusuarios{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    left: 1015px;
+    top: 330px;
+    margin:10px 50px;
+    background-color:rgb(136, 136, 136);
+    color:#000;
+    border-radius: 5px;
+}
+
+.cuadro3publicaciones-vista-buscarusuarios{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    left: 1165px;
+    top: 330px;
+    margin:10px 50px;
+    background-color:rgb(136, 136, 136);
+    color:#000;
+    border-radius: 5px;
+}
+
+.cuadro4publicaciones-vista-buscarusuarios{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    left: 865px;
+    top: 450px;
+    margin:10px 50px;
+    background-color:rgb(136, 136, 136);
+    color:#000;
+    border-radius: 5px;
+}
+
+.cuadro5publicaciones-vista-buscarusuarios{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    left: 1015px;
+    top: 450px;
+    margin:10px 50px;
+    background-color:rgb(136, 136, 136);
+    color:#000;
+    border-radius: 5px;
+}
+
+.cuadro6publicaciones-vista-buscarusuarios{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    left: 1165px;
+    top: 450px;
+    margin:10px 50px;
+    background-color:rgb(136, 136, 136);
+    color:#000;
+    border-radius: 5px;
+}
+.cuadroseguidores-vista-buscarusuarios{
+    border: 2px solid rgb(245, 134, 52);
+    position: absolute;
+    height: 80px;
+    top: 600px;
+    left: 650px;
+    padding: 20px;
+    background-color:rgb(255, 255, 255);
+    color:#000;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cuadrovistausuario-vista-buscarusuarios{
+    position: absolute;
+    width:950px;
+    height: 600px;
+    left: 450px;
+    top: 200px;
+    margin:10px 50px;
+    background-color:rgb(255, 255, 255);
+    color:#000;
+}
+.cuadrorecomendacionusuario-vista-buscarusuarios{
+    border: 4px solid rgb(245, 134, 52);
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    background-color:rgb(255, 255, 255);
+    color:#000;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuadropublicidad-vista-buscarusuarios{
+    border: 4px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 600px;
+    left: 1515px;
+    padding: 60px;
+    background-color:rgb(245, 134, 52);
+    color:#000;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuadroenviarinvitacion-vista-buscarusuarios{
+    border: 4px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 800px;
+    left: 850px;
+    padding: 10px;
+    background-color:rgb(245, 134, 52);
+    color:#000;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#paraescribir-vista-revisarusuario{
+    position: absolute;
+    width:950px;
+    height: 600px;
+    left: 430px;
+    top: 200px;
+    margin:10px 50px;
+    background-color:rgb(255, 255, 255);
+    color:#000;
+}
+
+.botón-inicio{
+    position: relative;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: rgb(245, 134, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    top:15px;
+    left:1800px
+}
+
+.recuperacion-correo{
+    position: relative;
+    margin: auto;
+    display: table;
+    border: 4px solid rgb(245, 134, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    top:400px
+}
+
+.Recuperacion{
+    position: relative;
+    margin: auto;
+    display: table;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: rgb(245, 134, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    top:520px
+}
+
+.buscarUsuarios{
+    border: 4px solid rgb(245, 134, 52);
+    position: absolute;
+    top: 162px;
+    left: 1450px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.bucarusuarios-vista-buscarusuarios{
+    border: 4px solid rgb(245, 134, 52);
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.usuario{
+    position: absolute;
+    top: 400px;
+    left: 1250px;
+    border: 4px solid rgb(245, 134, 52);
+    font-size: 25px;
+}
+
+.username-vista-buscarusuarios{
+    position: absolute;
+    top: 495px;
+    left: 635px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+
+.letreropublicaciones-vista-buscarusuarios{
+    position: absolute;
+    top: 230px;
+    left: 915px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(136, 136, 136);
+    font-size: 35px;
+}
+
+.contraseña{
+    position: absolute;
+    top: 520px;
+    left: 1250px;
+    border: 4px solid rgb(245, 134, 52);
+    font-size: 25px;
+}
+
+#nombreApp{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+.img1{
+    position: absolute;
+    width: 70px;
+    left: 1020px;
+    top: 155px;
+}
+
+.img1-vista-buscarusuarios{
+    width: 70px;
+    position: absolute;
+    left: 1470px;
+    top: 60px;
+}
+
+.imagencalendar-vista-buscarusuarios{
+    position: absolute;
+    width: 300px;
+    left: 1500px;
+    top: 220px;
+}
+
+.logo2{
+    position: absolute;
+    width: 300px;
+    left: 800px;
+    top: 130px;
+}
+
+.gif{
+    position: absolute;
+    width: 700px;
+    left: 250px;
+    top: 350px;
+}
+
+.usuarioImagen{
+    position: absolute;
+    width: 350px;
+    left: 1000px;
+    top: 340px;
+}
+
+.usuarioimagen-vista-buscarusuarios{
+    position: absolute;
+    width: 1000px;
+    left: -250px;
+    top: -75px;
+}
+
+
+.contraseñaImagen{
+    position: absolute;
+    width: 350px;
+    left: 1000px;
+    top: 460px;
+}
+
+.recordarContraseña{
+    position: absolute;
+    left: 1255px;
+    top: 750px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.registrarse{
+    position: absolute;
+    left: 1500px;
+    top: 750px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botonIngreso{
+    background-color: rgb(245, 134, 52);
+    position: absolute;
+    width: 360px;
+    left: 1255px;
+    top: 650px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: rgb(5, 5, 5);
+}
