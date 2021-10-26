@@ -31,3 +31,11 @@ def registrar_usuario():
         flash
 
     return render_template('registro.html',  form = form)
+
+@app.route('/mensajes')
+def mensajes():
+    return redirect('mensajes.html')
+
+@app.route('/notificaciones')
+def notificaciones():
+    return redirect('notificaciones.html')    
