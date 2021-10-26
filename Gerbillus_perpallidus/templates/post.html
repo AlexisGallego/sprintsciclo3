@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#7952b3">
+    <title>Post</title>   
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+  </head>
+
+  <style>
+      body{
+          font-family: 'Balsamiq Sans';
+      }
+
+      .btn-post-regresar{
+          display: block;
+          margin-top: 20px;
+          margin-left: 20px; 
+          background-color:rgb(245, 134, 52);
+          color:black;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 180px;
+          height: 25px;
+          transition: .3s ease all;
+      }
+
+      .img-post{
+          display: block;
+          margin: auto;
+          border: 2px solid black;
+          height: 500px;
+          width: 500px;
+          align-self: center;
+      }
+
+      .fa-3x, .fa-2x{
+          color:rgb(245, 134, 52);
+      }
+
+      .contenedor-post-detalles, .contenedor-post-comen{
+          padding-top: 10px;
+          width: 480px;
+          margin: auto;
+          display: flex;
+          align-items: center;
+      }
+
+      .user-post-name, .user-post-description, .user-post-comentario, .user-post-like{
+          margin-top: 10px;
+          margin-left: 5px;
+      }
+      
+      .btn-post-vermas, .btn-post-comentarios{
+          color:black;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          border: 3px solid black;
+          transition: .3s ease all;
+          box-shadow:5px 5px 5px black;
+      }
+
+      .btn-post-vermas{
+        display: block;
+        width: 80px;
+        margin: auto;
+        margin-right: 10%;
+      }
+
+      .btn-post-comentarios{
+        display: block;
+        width: 150px;
+        margin: auto;
+        margin-left: 10%;
+        position: absolute;
+      }
+
+      .user-post-fecha{
+          margin: auto;
+          margin-right: 10%;
+          margin-top: 10px;
+          text-align: right;
+      }
+
+      @media only screen and (min-width: 1000px){
+        .btn-post-vermas, .btn-post-comentarios, .user-post-fecha{
+        margin-right: 30%;
+        }
+
+        .btn-post-comentarios{
+        margin-left: 30%;
+      }
+      }
+
+      .user-post-comentario{
+          width: 250px;
+          border: 3px solid black;
+      }
+
+      .fa-2x{
+          margin-left: 20px;
+      }
+  </style>
+   
+</header>
+
+<main>
+<a href="#" id="btn-post-regresar" class="btn-post-regresar"> &raquo; Regresar a explorar</i></a>
+<br>
+<img src="..." class="img-post" alt="Post">
+
+<div class="contenedor-post-detalles">
+    <i id="icon-post-name" class="fas fa-user-circle fa-3x"></i>
+    <p class="user-post-name"> User name: ----------------</p>
+
+    <p class="user-post-description"> Description: ----------------------</p>
+</div>
+
+<a href="#" id="btn-post-vermas" class="btn-post-vermas"> Ver más</a> <br>
+<a href="#" id="btn-post-comentarios" class="btn-post-comentarios"> Ver comentarios</a>
+<p class="user-post-fecha"> Fecha publicación</p>
+<br>
+
+<div class="contenedor-post-comen">
+    <i id="icon-post-comentario" class="fas fa-comment fa-2x"></i> 
+    <input class="user-post-comentario" type="text" placeholder="Agrega un comentario">
+
+    <i id="icon-post-like" class="far fa-thumbs-up fa-2x"></i> 
+    <p class="user-post-like"> Me gusta</p>
+</div>
+
+</main>
+
+     
+</body>
+</html>

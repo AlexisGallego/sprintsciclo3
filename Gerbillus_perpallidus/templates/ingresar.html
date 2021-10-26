@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+    <title>Ingresar</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(221, 221, 221);
+        font-family: 'Balsamiq Sans';
+    }
+
+    .bucarusuarios-vista-buscarusuarios, .paraescribir-vista-ingresar, .pararevisar-vista-ingresar, .publicaciones-vista-ingresar{
+        border: 2px solid black ;
+    }
+
+    .contenedor-buscarinicio-ingresar{
+        padding-top: 1%;
+        padding-left: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn{
+        color:black;
+        border: 1px solid black;
+        background-color: white;
+        box-shadow:5px 5px 5px black;
+        margin-left: 100%;
+    }
+    
+    .bucarusuarios-vista-buscarusuarios{
+        border: 1px solid black ;
+        height: 20px;
+        width : 20%;
+    }
+
+    .contenedor-publicaciones-ingresar{
+        float: left;
+        width: 42%;
+        margin-left: 20px;
+    }
+
+    .paraescribir-vista-ingresar{
+        width: 90%;
+        height: 100px;
+        resize: none;
+    }
+
+    .pararevisar-vista-ingresar{
+        width: 90%;
+        height: 200px;
+        resize: none;
+        overflow-y: scroll;
+    }
+
+    .paraescribir-texto-ingresar{
+        color: rgb(245, 134, 52);
+    }
+
+    .publicaciones-vista-ingresar{
+        margin-top: 40px;
+        float: left;
+        text-align: center;
+        width: 40%;
+        height: 350px;
+        background-color: white;
+        overflow-y: scroll;
+    }
+
+    .contenedor-conectados-ingresar{
+        margin-top: 60px;
+        margin-right: 2%;
+        border: 1px solid black ;
+        float: right;
+        width: 12%;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .conectados1-ingresar{
+        background-color: rgb(245, 134, 52);
+        height: 30px;
+        margin: 0;
+    }
+
+    .conectados2-ingresar{
+        background-color: rgb(248, 236, 228);
+        height: 30px;
+        margin: 0;
+    }
+
+    .slogan-ingresar{   
+        color: rgb(245, 134, 52);
+        display:inline-block;
+        margin: auto;
+    }
+
+
+</style>
+
+<body>
+    <div class="contenedor-buscarinicio-ingresar">
+        <img class=img1-vista-buscarusuarios src="./imagenes/gp1.png" alt="" style="width: 40px;">
+        <input class= "bucarusuarios-vista-buscarusuarios" type="text" size="40" placeholder=" Buscar Usuarios">
+        <div class="btn-group">
+            <a href="#" class="btn btn-outline-warning active" aria-current="page">Inicio</a>
+            <a href="#" class="btn btn-outline-warning">Mensajes</a>
+            <a href="#" class="btn btn-outline-warning">Publicaciones</a>
+        </div>
+        <i id="icon-perfil-name" class="fas fa-user-circle fa-2x"></i>
+    </div>
+
+    <br><br>
+    <div class="contenedor-publicaciones-ingresar">
+        <h5 class="paraescribir-texto-ingresar">Publica tus emociones y sentimientos</h5>
+        <textarea name="" class="paraescribir-vista-ingresar" ></textarea>
+        <h5 class="paraescribir-texto-ingresar">Mis Publicaciones</h5>
+        <textarea name="" class="pararevisar-vista-ingresar" ></textarea>
+    </div>
+
+    <p class="publicaciones-vista-ingresar" > Publicaciones</p>
+    
+    <div class="contenedor-conectados-ingresar" >
+        <p class="conectados1-ingresar"> Connect</p>
+        <p class="conectados2-ingresar"> Person 1</p>
+        <p class="conectados1-ingresar"> Person 2</p>
+        <p class="conectados2-ingresar"> Person 3</p>
+        <p class="conectados1-ingresar"> Person 4</p>
+        <p class="conectados2-ingresar"> Person 5</p>
+        <p class="conectados1-ingresar"> </p>
+        <p class="conectados2-ingresar"> </p>
+        <p class="conectados1-ingresar"> </p>
+        <p class="conectados2-ingresar"> </p>
+    </div>
+
+    <br><br><br>
+    <h3 class="slogan-ingresar">Social Gerbillus Perpallidus</h3>
+
+</body>
+</html>
