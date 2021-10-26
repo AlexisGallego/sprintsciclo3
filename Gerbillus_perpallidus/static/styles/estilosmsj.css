@@ -1,0 +1,98 @@
+#Estado{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    top: 60px;
+    left: 600px;
+    position: absolute;
+}
+
+#numpublicaciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    top: 120px;
+    left: 600px;
+    position: absolute;
+}
+
+
+.usuarioImagen{
+    position:absolute;
+    width: 450px;
+    left: 340px;
+    top: 1px;
+}
+
+.usuarioImagen2{
+    position:absolute;
+    width: 250px;
+    left: 30px;
+    top: 150px;
+}
+.nubeizquierda{
+    position:absolute;
+    width: 250px;
+    left: 180px;
+    top: 200px;
+}
+.usuarioImagen3{
+    position:absolute;
+    width: 250px;
+    left: 1170px;
+    top: 230px;
+}
+.der{
+    position:absolute;
+    width: 250px;
+    left: 989px;
+    top: 280px;
+}
+.usuarioImagen4{
+    position:absolute;
+    width: 250px;
+    left: 30px;
+    top: 310px;
+}
+.nubeizquierda2{
+    position:absolute;
+    width: 250px;
+    left: 180px;
+    top: 360px;
+}
+.usuarioImagen5{
+    position:absolute;
+    width: 250px;
+    left: 1170px;
+    top: 390px;
+}
+.der2{
+    position:absolute;
+    width: 250px;
+    left: 989px;
+    top: 440px;
+}
+.activo{
+    position:absolute;
+    width: 20px;
+    left: 800px;
+    top: 101px;
+}
+
+.cam{
+    position:absolute;
+    width: 120px;
+    left: 1150px;
+    top: 556px;
+}
+
+
+.enviarmsj{
+    border: 4px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 550px;
+    left: 100px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 100;
+    font-size: 25px;
+}
+
+
