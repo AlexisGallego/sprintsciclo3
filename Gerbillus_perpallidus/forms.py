@@ -11,12 +11,12 @@ class registro(FlaskForm):
     correo_electronico = EmailField('correo electronico',\
     validators=[Email(), InputRequired()])
 
-    contraseña = PasswordField('contraseña', 
+    contrasena = PasswordField('contraseña', 
     validators=[InputRequired(message='este campo es requerido'), Length(min=6, max=20, 
     message='la contraseña debe tener entre 6 y 20 caracteres')])
 
     confirmar_contraseña = PasswordField('confirmar contraseña',\
-    validators=[InputRequired(), EqualTo('contraseña', 
+    validators=[InputRequired(), EqualTo('contrasena', 
     message='las contraseñas no coinciden')])
     
     usuario = StringField('usuario', 

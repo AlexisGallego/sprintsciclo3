@@ -14,14 +14,14 @@ def sqlite_connection():
 
 def create_table(connection):
     cursor = connection.cursor()
-    cursor.execute("CREATE TABLE usuarios(email text PRYMARY KEY, contraseña text, usuario text, nacimiento date, ciudad text)")
+    cursor.execute("CREATE TABLE usuarios( email text PRYMARY KEY, contrasena text, usuario text, ciudad text)")
     connection.commit()
 
 def insert_data(datos):
     insertar = sqlite_connection()
     cursor = insertar.cursor()
-    sql = "INSERT INTO usuarios (email, contraseña, usuario, ciudad) VALUES (?,?,?,?)"
-    cursor.execute(sql, datos )
+    sql = "INSERT INTO usuarios (email, contrasena, usuario, ciudad) VALUES (?,?,?,?)"
+    cursor.execute(sql, datos)
     insertar.commit()
     insertar.close()
 
@@ -35,7 +35,7 @@ def registrar_usuario():
     form = forms.registro()
     if form.validate_on_submit():
         datos = [form.correo_electronico,
-                 form.contraseña,
+                 form.contrasena,
                  form.usuario,
                  form.ciudad ]
 
@@ -57,27 +57,26 @@ def notificaciones():
 
 #Vistas Sofia
 @app.route('/ingresar')
-def notificaciones():
+def ingresar():
     return redirect('ingresar.html')   
 
 @app.route('/perfil')
-def notificaciones():
+def perfil():
     return redirect('perfil.html')   
 
 @app.route('/post')
-def notificaciones():
+def post():
     return redirect('post.html') 
 
 #Vistas Lina
 @app.route('/login')
-def notificaciones():
+def login():
     return redirect('login.html')
  
 @app.route('/recuperarcontra')
-def notificaciones():
+def recuperar_contraseña():
     return redirect('recuperarcontra.html') 
 
 @app.route('/revisarusuario')
-def notificaciones():
-    return redirect('revisarusuario.html') 
-  
+def revisra_usuario():
+    return redirect('revisarusuario.html')  
