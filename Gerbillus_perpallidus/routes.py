@@ -14,7 +14,7 @@ def sqlite_connection():
 
 def create_table(connection):
     cursor = connection.cursor()
-    cursor.execute("CREATE TABLE usuarios( email text PRYMARY KEY, contrasena text, usuario text, ciudad text)")
+    cursor.execute("CREATE TABLE usuarios( email string PRYMARY KEY, contrasena string, usuario string, ciudad string)")
     connection.commit()
 
 def insert_data(datos):
@@ -78,5 +78,5 @@ def recuperar_contraseña():
     return redirect('recuperarcontra.html') 
 
 @app.route('/revisarusuario')
-def revisra_usuario():
+def revisar_usuario():
     return redirect('revisarusuario.html')  
