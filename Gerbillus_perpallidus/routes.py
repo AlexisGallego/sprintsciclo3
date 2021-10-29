@@ -75,4 +75,8 @@ def recuperar_contraseña():
 
 @app.route('/revisarusuario')
 def revisar_usuario():
-    return redirect('revisarusuario.html')  
+    return redirect('revisarusuario.html')
+
+@app.route('/buscarusuarios')
+def buscarusuarios():
+    return redirect('buscarusuarios.html')      
