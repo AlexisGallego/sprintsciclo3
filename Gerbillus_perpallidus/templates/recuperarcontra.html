@@ -5,20 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar contraseña</title>
-    <link rel="stylesheet" href="../static/styles/estilos.css">
 </head>
+
+<style>
+
+    .logo2{
+    display: block;
+    height:200px;
+    margin:auto;
+    margin-top: 200px;
+    }
+
+    .recuperacion-correo{
+    position: relative;
+    margin: auto;
+    display: table;
+    border: 3px solid rgb(245, 134, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    top:20px;
+    width: 20%; 
+    height: 20px;
+    }
+
+    .Recuperacion{
+    position: relative;
+    margin: auto;
+    display: table;
+    background-color: rgb(245, 134, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    top:40px;
+    border: 3px solid black;
+    transition: .3s ease all;
+    box-shadow:5px 5px 5px black;
+    }
+
+    .botón-inicio{
+    background-color: rgb(245, 134, 52);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    top:15px;
+    margin-left:20%;
+    border: 3px solid black;
+    transition: .3s ease all;
+    box-shadow:5px 5px 5px black;
+    }
+</style>
+</header>
+
+<main>
 <body>
+    
+    <input class="botón-inicio" type="button" value="Inicio" >
+    <img class="logo2" src="../static/imagenes/logo2.png" alt="">
     <form action="">
         <div>
-            <input class="recuperacion-correo" type="text" placeholder="Escribe aquí tu correo electrónico registrado" style="width: 600px; height: 50px;">
+            <input class="recuperacion-correo" type="email" placeholder="Escribe aquí tu correo electrónico registrado" >
         </div>
         <div>
-            <input class="botón-inicio" type="submit" value="Inicio" style="width: 80px; height: 30px;">
+            <input class="Recuperacion" type="submit" value="Recuperar contraseña" >
         </div>
-        <div>
-            <input class="Recuperacion" type="submit" value="Recuperar contraseña" style="width : 300px; height: 45px;">
-        </div>
-    </form> 
-    <img class=logo2 src="../static/imagenes/logo2.png" alt="">    
+    </form>
+</main>      
 </body>
 </html>

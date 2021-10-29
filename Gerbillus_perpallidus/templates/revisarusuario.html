@@ -5,23 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisar usuario</title>
-    <link rel="stylesheet" href="../static/styles/estilos.css">
     <style>
         body{
-            background-color: rgb(221, 221, 221);
+            margin-top: 50px;
             }
+
+.BuscarGeneral-revisarusuario{
+        float: left;
+        width: 20%;
+        margin-left: 3%;
+    }
+
+.bucarusuarios-vista-buscarusuarios{
+    border: 3px solid rgb(245, 134, 52);
+    margin-top: 30px;
+    left: 100px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    width: 50%;
+    height: 20px;
+}
+
+.cuadrorecomendacionusuario-vista-buscarusuarios{
+    margin-top: 60px;
+    padding: 5px;
+    border: 3px solid rgb(245, 134, 52);
+    background-color:rgb(255, 255, 255);
+    width: 80%;
+    color:#000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.PartePrincipal-revisarusuario{
+        float: left;
+        width: 50%;
+        margin-left: 20px;
+        text-align: right
+    }
+
+#nombreApp-vista-buscarusuarios{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(245, 134, 52);
+    margin:auto;
+}
+
+
+.img1-vista-buscarusuarios{
+    width: 40px;
+    position: absolute;
+    left: 75%;
+    top: 50px;
+}
+
+	.slogan-vista-buscarusuarios{
+    	    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    	    margin:auto;
+}
+
+#paraescribir-vista-revisarusuario{
+    width:100%;
+    height: 600px;
+    margin:30px 0px;
+    background-color:rgb(255, 255, 255);
+    color:#000;
+}
+
+
+.CalendarioPublici-revisarusuario{
+        margin-top: 110px;
+        margin-right: 3%;
+        float: right;
+        width: 20%;
+        align-items: center;
+    }
+
+.cuadropublicidad-vista-buscarusuarios{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color:rgb(245, 134, 52);
+    color:#000;
+    height: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow:5px 5px 5px black;
+    text-align: center;
+}
+
+.imagencalendar-vista-buscarusuarios{
+    width: 80%;
+    box-shadow:5px 5px 5px black;
+    postion:absolute;
+    margin-left: 9%;
+}
+
     </style>
     <script src="https://kit.fontawesome.com/f776900739.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <p class="slogan-vista-buscarusuarios">¡Tus imágenes y fotos a un link del mundo!</p>
-    <p id="nombreApp-vista-buscarusuarios"> Social Gerbillus Perpallidus </p>
-    <div>
-        <input class= "bucarusuarios-vista-buscarusuarios" type="text" size="40" placeholder=" Buscar Usuarios" style="width : 300px; height: 50px;">
-    </div>
-    <img class=imagencalendar-vista-buscarusuarios src="../static/imagenes/calendario.jpg" alt="">
-    <img class=img1-vista-buscarusuarios src="../static/imagenes/logo1.png" alt="">
-    <p class="cuadrorecomendacionusuario-vista-buscarusuarios">
+</header>
+
+
+    <div class="BuscarGeneral-revisarusuario">
+        <input class= "bucarusuarios-vista-buscarusuarios" type="text" size="40" placeholder=" Buscar Usuarios">
+        <p class="cuadrorecomendacionusuario-vista-buscarusuarios">
         Búsquedas relacionadas <br>
         Persona 1 <br>
         Persona 2 <br>
@@ -36,9 +120,24 @@
         Persona 1<br>
         Persona 2<br>
         Persona 3<br>
-    </p>
+        </p>
+    </div>
 
-    <textarea name="" id="paraescribir-vista-revisarusuario" ></textarea>
-    <p class="cuadropublicidad-vista-buscarusuarios">Publicidad</p>
+    <div class="PartePrincipal-revisarusuario">
+        <h1 id="nombreApp-vista-buscarusuarios"> Social Gerbillus Perpallidus </h1>
+        <img class=img1-vista-buscarusuarios src="../static/imagenes/logo.png" alt="">
+        <p class="slogan-vista-buscarusuarios">¡Tus imágenes y fotos a un link del mundo!</p>
+        <textarea name="" id="paraescribir-vista-revisarusuario" ></textarea>
+    </div>
+
+    <div class="CalendarioPublici-revisarusuario">
+        <img class=imagencalendar-vista-buscarusuarios src="../static/imagenes/calendario.jpg" alt="">
+        <p class="cuadropublicidad-vista-buscarusuarios">Publicidad</p>
+    </div>
+    
+    
+    
+    
+</main>      
 </body>
 </html>

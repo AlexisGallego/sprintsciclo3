@@ -6,42 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <LINK REL=StyleSheet HREF="../static/styles/estilos.css">
 
     <style>
         body{
-            background-color: rgb(221, 221, 221);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
+.presentacion-login{
+        float: left;
+        width: 55%;
+        padding-left: 8%;
+
+        align-items:center;
+}
+
+#nombreApp {
+    font-size: 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(245, 134, 52);
+        float: left;
+}
+
+.img1{
+    margin-top:25px;
+    width: 8%;
+}
+
+#slogan {
+    display:inline-block;
+    margin:0;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif{
+    width: 80%;
+    margin-top: 80px;
+}
+
+.datos-login{
+        width: 35%;
+        float: right;
+        align-items: right;
+}
+
+.buscarUsuarios-login{
+    position: absolute;
+    right: 20px;
+    border: 3px solid rgb(245, 134, 52);
+    margin-top: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    width: 20%;
+    height: 20px;
+}
+
+.usuarioImagen{
+    position: absolute;
+    width: 18%;
+    top: 170px;
+}
+
+.usuario{
+    position: relative;
+    margin-top: 170px;
+    top: 3vw;
+    left: 35%;
+    border: 2px solid rgb(245, 134, 52);
+}
+
+.contraseñaImagen{
+    position: absolute;
+    width: 18%;
+    top: 270px;
+}
+
+.contraseña{
+    position: relative;
+    margin-top: 75px;
+    top: 3vw;
+    left: 35%;
+    border: 2px solid rgb(245, 134, 52);
+}
+
+.botonIngreso{
+    position: relative;
+    background-color: rgb(245, 134, 52);
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 2%;
+    left: 15%;
+    top: 5vw;
+    font-size: 40px;
+    color: rgb(5, 5, 5);
+}
+
+
+.recordarContraseña{
+    position: relative;
+    top: 5vw;
+    left: 15%;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.registrarse{
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+    margin-left: 2%;
+    top: 5vw;
+}
+
     </style>
     <script src="https://kit.fontawesome.com/f776900739.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <p id="nombreApp"> Social Gerbillus Perpallidus </p>
-    <form action="">
+    <div class="presentacion-login">
+        <h1 id="nombreApp"> Social Gerbillus Perpallidus </h1>
+        <img class="img1" src="../static/imagenes/logo.png" alt="">
+        <h2 id="slogan">¡Tus imágenes y fotos a un link del mundo!</h2>
+        <img class="gif" src="../static/imagenes/giflogin.gif" alt="" srcset="">
+    </div>
+    <form class="datos-login" action="">
         <div>
-            <input class= "buscarUsuarios" type="text" size="40" placeholder=" Buscar Usuarios" style="width : 300px; height: 50px;">
+            <input class= "buscarUsuarios-login" type="text" size="40" placeholder=" Buscar Usuarios">
         </div>
         <div>
-            <input class= "usuario" type="text" placeholder="Usuario" style="width : 400px; height: 50px;" >
+            <img class="usuarioImagen" src="../static/imagenes/imagenusuario.png" alt="">
+            <input class= "usuario" type="text" placeholder="Usuario" >
         </div>
         <div>
-            <input class= "contraseña" type="text" placeholder="Contraseña" style="width : 400px; height: 50px;" >
+            <img class="contraseñaImagen" src="../static/imagenes/imagencontraseña.png" alt="">
+            <input class= "contraseña" type="text" placeholder="Contraseña">
         </div>
         <div>
-            <input class= "botonIngreso" type="submit" value="Entrar" style="width : 400px; height: 50px;">
+            <input class= "botonIngreso" type="submit" value="Entrar">
         </div>
-        <div>
-            <input class= "recordarContraseña" type="submit" value="Recordar contraseña" style="width : 150px; height: 45px;">
-        </div>
-        <div>
-            <input class= "registrarse" type="submit" value="Registrarse" style="width : 150px; height: 45px;">
+        <div class="opciones-login">
+            <input class= "recordarContraseña" type="submit" value="Recordar contraseña">
+            <input class= "registrarse" type="submit" value="Registrarse">
         </div>
     </form>
-    <p id="slogan">¡Tus imágenes y fotos a un link del mundo!</p>
-    <img class=img1 src="../static/imagenes/logo1.png" alt="">
-    <img class=gif src="../static/imagenes/giflogin.gif" alt="" srcset="">
-    <img class=usuarioImagen src="../static/imagenes/imagenusuario.png" alt="">
-    <img class=contraseñaImagen src="../static/imagenes/imagencontraseña.png" alt="">
+    
 </body>
 </html>
