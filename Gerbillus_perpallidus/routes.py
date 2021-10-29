@@ -14,14 +14,14 @@ def sqlite_connection():
 
 def create_table(connection):
     cursor = connection.cursor()
-    cursor.execute("CREATE TABLE usuarios( email string PRYMARY KEY, contrasena string, usuario string, ciudad string)")
+    cursor.execute("CREATE TABLE usuarios( email text PRYMARY KEY, contrasena text, usuario text, ciudad text)")
     connection.commit()
 
-def insert_data(datos):
+def insert_data(form):
     insertar = sqlite_connection()
     cursor = insertar.cursor()
     sql = "INSERT INTO usuarios (email, contrasena, usuario, ciudad) VALUES (?,?,?,?)"
-    cursor.execute(sql, datos)
+    cursor.execute(sql, [form.correo_electronico.data, form.contrasena.data, form.usuario.data, form.ciudad.data])
     insertar.commit()
     insertar.close()
 
@@ -33,13 +33,9 @@ def index():
 @app.route('/registro', methods=['GET', 'POST'])
 def registrar_usuario():
     form = forms.registro()
-    if form.validate_on_submit():
-        datos = [form.correo_electronico,
-                 form.contrasena,
-                 form.usuario,
-                 form.ciudad ]
+    if form.validate_on_submit(): 
 
-        insert_data(datos)
+        insert_data(form)
         flash('usuario registrado')
         return redirect(url_for('index'))
     else:
