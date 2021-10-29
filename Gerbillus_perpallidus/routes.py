@@ -37,7 +37,7 @@ def registrar_usuario():
 
         insert_data(form)
         flash('usuario registrado')
-        return redirect(url_for('index'))
+        return redirect(url_for('registro.html'))
     else:
         flash('no se ha podido registrar el usuario')
 
