@@ -1,0 +1,310 @@
+body{
+          font-family: 'Balsamiq Sans';
+      }
+
+
+/* -------------PERFIL------------------  */
+
+      .btn-perfil-regresar{
+          display: block;
+          margin-top: 20px;
+          margin-left: 20px; 
+          background-color:rgb(245, 134, 52);
+          color:black;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 180px;
+          height: 25px;
+          transition: .3s ease all;
+      }
+
+      .fa-10x{
+          color:rgb(245, 134, 52);
+      }
+
+      .contenedor-perfil-detalles{
+          position: absolute;
+          margin-left: 25%;
+          margin-top: 40px;
+      }
+
+      @media only screen and (min-width: 1100px){
+        .contenedor-perfil-detalles{
+          margin-left: 30%;
+      }
+      }
+
+      .contenedor-perfil-publicaciones{
+          display: block;
+          margin-left: 45%;
+      }
+
+      .contenedor-perfil-imgs{ 
+          display: inline-block;
+          height: 200px;
+          width: 350px;
+          overflow-y: auto;
+      }
+
+      .img-perfil{
+          display: inline-block;
+          margin-left: 5px;
+          margin-bottom: 10px;
+          height: 100px;
+          width: 100px;
+          border: 1px solid rgba(0, 0, 0, 0.459);
+          border-radius: 5px;
+      }
+
+      .user-perfil-estado{
+          display: block;
+          margin: auto;
+          padding: 10px;
+          width: 630px;
+          height: 70px;
+          border: 3px solid rgba(124, 109, 109, 0.267);
+          border-radius: 20px;
+
+      }
+      .contenedor-perfil-seguidores{ 
+          width: 600px;
+          height: 50px;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border: 3px solid black;
+      }
+      
+      .btn-perfil-publicar{
+          display: block;
+          background-color: rgb(245, 134, 52);
+          color:black;
+          text-align: center;
+          text-decoration: none;
+          margin: auto;
+          cursor: pointer;
+          padding: 10px;
+          width: 400px;
+          height: 70px;
+          font-size: 25px;
+          border: 3px solid black;
+          transition: .3s ease all;
+          box-shadow:5px 5px 5px black;
+      }
+
+
+/* -------------REVISAR USUARIO------------------  */
+
+
+.BuscarGeneral-revisarusuario{
+        float: left;
+        width: 20%;
+        margin-left: 3%;
+    }
+
+.PartePrincipal-revisarusuario{
+        float: left;
+        width: 50%;
+        margin-left: 20px;
+        text-align: right
+    }
+
+
+#paraescribir-vista-revisarusuario{
+    width:100%;
+    height: 600px;
+    margin:30px 0px;
+    background-color:rgb(255, 255, 255);
+    color:#000;
+}
+
+.CalendarioPublici-revisarusuario{
+        margin-top: 110px;
+        margin-right: 3%;
+        float: right;
+        width: 20%;
+        align-items: center;
+    }
+
+
+/* -------------BUSCAR USUARIO------------------  */
+
+
+
+.bucarusuarios-vista-buscarusuarios{
+    border: 3px solid rgb(245, 134, 52);
+    margin-top: 30px;
+    left: 100px;
+    font-weight: 1000;
+    width: 50%;
+    height: 20px;
+}
+
+.cuadrorecomendacionusuario-vista-buscarusuarios{
+    margin-top: 60px;
+    padding: 5px;
+    border: 3px solid rgb(245, 134, 52);
+    background-color:rgb(255, 255, 255);
+    width: 80%;
+    color:#000;
+}
+
+.img1-vista-buscarusuarios{
+    width: 40px;
+    position: absolute;
+    left: 75%;
+    top: 50px;
+}
+
+#nombreApp-vista-buscarusuarios{
+    color: rgb(245, 134, 52);
+    margin:auto;
+}
+
+.slogan-vista-buscarusuarios{
+    margin:auto;
+}
+
+.usuarioencontrado-buscarusuario{ 
+    width: 50%; 
+    position:absolute;
+}
+
+.contenedor-encontrado-publicaciones{ 
+    width: 50%; 
+    margin-left: 20px;
+    }
+
+.contenedor-encontrado-imgs{ 
+    position:relative;
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    padding-left: 80%;
+    overflow-y: auto;
+}
+
+.imagencalendar-vista-buscarusuarios{
+    width: 80%;
+    box-shadow:5px 5px 5px black;
+    postion:absolute;
+    margin-left: 9%;
+}
+
+.cuadropublicidad-vista-buscarusuarios{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color:rgb(245, 134, 52);
+    color:#000;
+    height: 150px;
+    box-shadow:5px 5px 5px black;
+    text-align: center;
+}
+
+/* -------------LOGIN------------------  */
+
+.presentacion-login{
+        float: left;
+        width: 55%;
+        padding-left: 8%;
+        align-items:center;
+}
+
+#nombreApp {
+    font-size: 3vw;
+    color: rgb(245, 134, 52);
+        float: left;
+}
+
+.img1{
+    margin-top:25px;
+    width: 8%;
+}
+
+#slogan {
+    display:inline-block;
+    margin:0;
+    font-size: 1.5vw;
+}
+
+.gif{
+    width: 80%;
+    margin-top: 80px;
+}
+
+.datos-login{
+        width: 35%;
+        float: right;
+        align-items: right;
+}
+
+.buscarUsuarios-login{
+    position: absolute;
+    right: 20px;
+    border: 3px solid rgb(245, 134, 52);
+    margin-top: 30px;
+    font-weight: 1000;
+    width: 20%;
+    height: 20px;
+}
+
+.usuarioImagen{
+    position: absolute;
+    width: 18%;
+    top: 170px;
+}
+
+.usuario{
+    position: relative;
+    margin-top: 170px;
+    top: 3vw;
+    left: 35%;
+    border: 2px solid rgb(245, 134, 52);
+}
+
+.contraseñaImagen{
+    position: absolute;
+    width: 18%;
+    top: 270px;
+}
+
+.contraseña{
+    position: relative;
+    margin-top: 75px;
+    top: 3vw;
+    left: 35%;
+    border: 2px solid rgb(245, 134, 52);
+}
+
+.botonIngreso{
+    position: relative;
+    background-color: rgb(245, 134, 52);
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 2%;
+    left: 15%;
+    top: 5vw;
+    font-size: 40px;
+    color: rgb(5, 5, 5);
+    box-shadow:5px 5px 5px black;
+}
+
+
+.recordarContraseña{
+    position: relative;
+    top: 5vw;
+    left: 15%;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.registrarse{
+    position: relative;
+    left: 20%;
+    margin-top: 20px;
+    margin-left: 2%;
+    top: 5vw;
+}
